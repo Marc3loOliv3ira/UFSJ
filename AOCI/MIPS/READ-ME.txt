@@ -1,0 +1,62 @@
+Aqui estará o Passo a Passo de Como cada estrutura de Circuito Foi Criada e Ligada:
+
+PROCESSOS LEVADOS EM CONSIDERAÇAO PARA LIGAR o Caminho de dados
+
+1º Busca de Instrução
+2º Separar a instrução de 32 Bits
+3º Executar a Instrução
+
+ORDEM DOS CIRCUITOS ADICIONADOS
+
+1ºPasso -> Foran adicionadas os elementos principais do caminho de dados(Memoria Instruções,PC,Somador)
+2ºPasso -> Foram Adicionados Agora o Banco de registradores e a ULA(ALU),foi adicionado tambem o 
+divisor (Divide a intruçao em ciclos de clock)que foi necessario para o banco de registradores
+(onde A e B Armazenam dados para o proximo ciclo da mesma instrução).
+3º Passo-> Foram Adicionadas as funçoes load/store,beq,adicionando a Mem Data, foi possovel perceber que existe uma unidade de 
+controle Dependendo da instrução, uma das operações deverá ser executada:	
+–> Aritimetica ou logica(and,or,sub,add,slt)	
+–> Load/store (add para cálculo do endereço)	
+–> Beq (subtração)	
+Então a unidade de Controle ULA Tambem foi adicionada.
+4º Passo -> foi adicionada a Unidade de Controle Principal. 
+5º Passo -> foram Adicionados os Multiplexadores de acordo com o necessario
+
+LIGAÇOES
+
+O simbolo (-) Representa a Ligacao de um circuito a outro
+PC - Somador
+   - Somador
+   - Mem Inst
+
+MEMINST - Divisor(Instruçao)
+
+DIVISOR - Uc(OP)
+	- Banco de Registradores(RS)
+        - Banco de Registradores(RT)
+        - Multiplexador(RT,RD)
+        - Uc/Ula(FUNCT)
+	- Extensor de Sinal(Imediato)
+
+
+BANCO DE REGISTRADORES - Ula (A)
+                       - Multiplexador (B)
+
+
+ULA - Multiplexador(Resultado)
+    - Mem Data(Resultado)
+    - And(Zero)
+
+
+UC/ULA - Ula(AluControl)
+
+UC - Multiplexador(RegDist)
+   - Multiplexador(AluSrc)
+   - Multiplexador(MemtoReg)
+   - Branco de Registradores(RegWrite)
+   - Mem Data(MemRead)
+   - Mem Data(MemWrite)
+   - And (Branch)
+   - Uc/Ula(AluOp)
+
+MEMDATA - Multiplexador(DataOut)
+
