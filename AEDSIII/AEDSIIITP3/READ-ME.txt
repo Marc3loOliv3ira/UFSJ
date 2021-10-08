@@ -1,0 +1,10 @@
+Observações:
+1->O arquivo txt de teste deve ter a quebra de linha sempre que uma nova aresta(caminho) for adicionada
+2->Os comandos Para compilar sao
+ ->make
+ ->./tp3 -i Arquivo_de_Entrada.txt -o Arquivo_De_Saida.txt -a Caso queira executar o força bruta
+ ->./tp3 -i Arquivo_de_Entrada.txt -o Arquivo_De_Saida.txt -b Caso queira executar a 1ªHeuristica
+ ->./tp3 -i Arquivo_de_Entrada.txt -o Arquivo_De_Saida.txt -c Caso queria executar a 2ªHeuristica
+
+O arquivo GERAGRAFO.C foi utilizado para gerar os grafos 
+Para o teste :3 
