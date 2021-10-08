@@ -1,0 +1,14 @@
+LEIAME;
+O Arquivo RegistroPequeno.c deve ser compilado para analisar o tempo de execução dos registros pequenos.
+
+O Arquivo RegistroGrande.c deve ser compilado para analisar o tempo de execução dos registros grandes.
+
+o Arquivo vetor.c analisa o tempo de execução dos vetores;
+
+Defina cada índice da opção em seguida ele mostrará o tempo de execução na tela 
+
+o arquivo test.c foi usado para rodar 10 vezes o código e encontrar a média do tempo 
+passamos nele a biblioteca resgistropeq.h,registrogran.h e depois a vetor.h da qual fizemos a tabela.
+
+
+

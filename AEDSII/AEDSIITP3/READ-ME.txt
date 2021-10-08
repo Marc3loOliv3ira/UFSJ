@@ -1,0 +1,12 @@
+ALUNOS: Marcella Netto de Oliveira
+Marcelo Ari de Oliveira 
+
+Instruções para compilação: 
+GCC arquivocommain.c -o nomedoexe 
+
+Para o funcionamento do código, o programa foi dividido em dois arquivos .h e um arquivo .c, 
+a fim de facilitar a sua implementação e entendimento, desta forma é mais fácil encontrar possíveis 
+erros e fazer eventuais modificações de forma prática e eficiente.
+*ArvoreMorse.h 
+TraduzLetra.h 
+*TrabalhoAES3.c
